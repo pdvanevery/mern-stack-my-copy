@@ -1,6 +1,9 @@
 $background-color: rgb(245, 245, 245);
 $navbar-color: rgb(198, 196, 196);
 @function pow($base, $exponent) {
+	@if type-of($result) != "number"{
+		@warn "`#{{$result}` is not a number";
+	}
 	$result: 1;
 	@for $_ from 1 through $exponent {
 	  $result: $result * $base;
