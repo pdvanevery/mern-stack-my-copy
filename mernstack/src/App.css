@@ -1,55 +1,50 @@
 .App {
-	height: 100vh;
-	width: 100vw;
-	display: flex;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
 }
 
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .Sidebar {
-	height: 100%;
-	width: 250px;
-	background-color: rgb(245, 245, 245);
+  height: 100%;
+  width: 250px;
+  background-color: rgb(245, 245, 245);
 }
 
 .SidebarList {
-	height: auto;
-	padding: 0;
-	width: 100%;
+  height: auto;
+  padding: 0;
+  width: 100%;
 }
-
 .SidebarList .row {
-	width: 100%;
-	height: 60px;
-	list-style-type: none;
-	margin: 0;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 17px;
+  width: 100%;
+  height: 64px;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 17px;
 }
-
 .SidebarList .row:hover {
-	cursor: pointer;
-	background-color: rgb(198, 196, 196);
+  cursor: pointer;
+  background-color: rgb(198, 196, 196);
 }
-
 .SidebarList #active {
-	background-color: rgb(198, 196, 196);
+  background-color: rgb(198, 196, 196);
 }
 
 .row #icon {
-	flex: 20%;
-	display: grid;
-	/* place-items: center; */
-	color: black;
+  flex: 20%;
+  display: grid;
+  color: black;
 }
-
 .row #title {
-	flex: 80%;
-}
+  flex: 80%;
+}/*# sourceMappingURL=App.css.map */

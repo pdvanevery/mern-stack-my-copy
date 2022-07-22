@@ -1,0 +1,66 @@
+$background-color: rgb(245, 245, 245);
+$navbar-color: rgb(198, 196, 196);
+@function pow($base, $exponent) {
+	$result: 1;
+	@for $_ from 1 through $exponent {
+	  $result: $result * $base;
+	}
+	@return $result;
+  }
+
+@mixin align-stuff{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.App {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.Sidebar {
+	height: 100%;
+	width: 250px;
+	background-color: $background-color
+}
+
+.SidebarList {
+	height: auto;
+	padding: 0;
+	width: 100%;
+	.row {
+		width: 100%;
+		height: pow(4,3) * 1px;
+		list-style-type: none;
+		margin: 0;
+		@include align-stuff();
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		font-size: 17px;
+		&:hover {
+			cursor: pointer;
+			background-color: $navbar-color;
+		}
+	}
+	#active {
+		background-color: $navbar-color;
+	}
+}
+
+.row {
+	#icon {
+		flex: 20%;
+		display: grid;
+		color: black;
+	}
+	#title {
+		flex: 80%;
+	}
+}
